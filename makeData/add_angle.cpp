@@ -23,13 +23,13 @@ int main(){
 	int truth[COUNT], pri ,tmp;
 	idx = 0;
 	freopen("engine_label.txt", "r", stdin);
-	freopen("engine9_dis.txt", "w", stdout);
+	freopen("engine3_dis.txt", "w", stdout);
 	while (scanf("%d", &tmp) != EOF){
 		truth[idx++] = tmp;
 	}
 
 	int acc[15] = { 0 };
-	freopen("engine9.txt", "r", stdin);
+	freopen("engine3.txt", "r", stdin);
 	
 	for (int i = 0; i < NEAR; i++){
 		for (int k = 0; k < COUNT; k++){
