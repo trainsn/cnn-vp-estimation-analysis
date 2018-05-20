@@ -2,7 +2,7 @@
 #include <math.h>
 #include <stdlib.h>
 
-#define  COUNT 450
+#define  COUNT 250
 #define PI 3.1415926
 #define NEAR 12
 double dist(double phia, double thetaa, double phib, double thetab){
@@ -22,14 +22,14 @@ int main(){
 	
 	int truth[COUNT], pri ,tmp;
 	idx = 0;
-	freopen("engine_label.txt", "r", stdin);
-	freopen("engine3_dis.txt", "w", stdout);
+	freopen("tooth_label.txt", "r", stdin);
+	freopen("tooth1_dis.txt", "w", stdout);
 	while (scanf("%d", &tmp) != EOF){
 		truth[idx++] = tmp;
 	}
 
 	int acc[15] = { 0 };
-	freopen("engine3.txt", "r", stdin);
+	freopen("tooth1.txt", "r", stdin);
 	
 	for (int i = 0; i < NEAR; i++){
 		for (int k = 0; k < COUNT; k++){
